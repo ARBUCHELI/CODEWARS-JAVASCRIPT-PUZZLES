@@ -29,3 +29,25 @@ Don't forget your primitives either:
 https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 */
 
+function greaterThanLessThan (a,b,c) {
+//write your code here! 
+  if (a>=0 && b>=0 && c>=0 && a<b<c){
+    return true;
+  }
+  else if (a>=0 && b>=0 && c<0 && a<b>c){
+    return false;
+  }
+  else if (a<0 && b<0 && c>=0 && a<b<c){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+/*Test*/
+Test.assertEquals(greaterThanLessThan(Number(null), 0, 1),true);
+Test.assertEquals(greaterThanLessThan(700000000001, 700000000002, -1),false);
+Test.assertEquals(greaterThanLessThan(-9, -8, 7),true);
+Test.assertEquals(greaterThanLessThan(-9, -8, -7),false);
+
