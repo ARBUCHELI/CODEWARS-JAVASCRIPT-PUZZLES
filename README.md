@@ -1,2 +1,2 @@
 # CODEWARS-JAVASCRIPT-PUZZLES
-Coding Puzzles in Javascript from www.codewars.com
+## Coding Puzzles in Javascript from www.codewars.com
