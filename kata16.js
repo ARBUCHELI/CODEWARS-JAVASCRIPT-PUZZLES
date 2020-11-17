@@ -1,4 +1,5 @@
-In lesson #11, we learned that for loop can traverse the array. If we want to traverse an object, we can use the variant of the for: for..in, it can traverse all the keys of the object. an example:
+/*In lesson #11, we learned that for loop can traverse the array. If we want to traverse an object, we can use the variant of the for: for..in, it can traverse all the keys of
+the object. an example:*/
 
 function showObjectKeys(obj){
   for (var key in obj){
@@ -15,7 +16,8 @@ console.log("keys of ob:")
 showObjectKeys(ob);
 console.log("values of ob:")
 showObjectValues(ob);
-Code results:
+
+/*Code results:
 
 keys of ob:
 item1
@@ -27,7 +29,7 @@ This
 is
 an
 example
-for..in can also be used in arrays, at this time the array is treated as an object. Modify the code above, we can see:
+for..in can also be used in arrays, at this time the array is treated as an object. Modify the code above, we can see:*/
 
 function showObjectKeys(obj){
   for (var key in obj){
@@ -44,26 +46,33 @@ console.log("keys of arr:")
 showObjectKeys(arr);
 console.log("values of arr:")
 showObjectValues(arr);
-Code results:
 
-keys of arr:
+
+/*Code results:*/
+
+/*keys of arr:*/
 0
 1
 2
-values of arr:
+
+/*values of arr:
 one
 two
 three
-We can see, keys is the index of the array elements. Need attention: When using for..in with an array, key(index) is always a string, not a number. In the example above, keys is "0", "1" and "2", we can't see the quotes because console.log() doesn't show it.
+We can see, keys is the index of the array elements. Need attention: When using for..in with an array, key(index) is always a string, not a number. In the example above, keys is
+"0", "1" and "2", we can't see the quotes because console.log() doesn't show it.
 
-Although for..in can traverse the array, but we do not recommend the use of it. Because it has a flaw, in some cases, it may not be in accordance with the order of the array elements to traverse the array. So we recommend you use another variant:for..of(New member of ES6), it can traverse all the values of the array, if you don't care about its index. In the example above, function showObjectValues() can be modified like this:
+Although for..in can traverse the array, but we do not recommend the use of it. Because it has a flaw, in some cases, it may not be in accordance with the order of the array
+elements to traverse the array. So we recommend you use another variant:for..of(New member of ES6), it can traverse all the values of the array, if you don't care about its 
+index. In the example above, function showObjectValues() can be modified like this:*/
 
 function showArrayValues(arr){
   for (var value of arr){
     console.log(value);
   }
 }
-Ok, lesson is over, let's us do some task with for..in.
+
+/*Ok, lesson is over, let's us do some task with for..in.
 
 Task
 Coding in function giveMeFive, function accept 1 parameter:obj, it's an object.
@@ -72,7 +81,7 @@ You need to the traverse the obj, if the length of the object key equals to 5, t
 
 Return the five after works finished.
 
-You should use for..in in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)/**/
+You should use for..in in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)*/
 
 function giveMeFive(obj){
   //coding here
