@@ -1,5 +1,5 @@
-/*In lesson #11, we learned that for loop can traverse the array. If we want to traverse an object, we can use the variant of the for: for..in, it can traverse all the keys of
-the object. an example:*/
+/*In lesson #11, we learned that for loop can traverse the array. If we want to traverse an object, we can use the variant of the for: for..in, it can traverse all the
+keys of the object. an example:*/
 
 function showObjectKeys(obj){
   for (var key in obj){
