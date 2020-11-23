@@ -1,5 +1,3 @@
-/*NOTE: THIS IS A HARDCODING TEMPORARY SOLUTION*/
-
 /*This time we learn three methods to retrieve the string:indexOf() lastIndexOf() and search(). Their usage:*/
 
 StringObject.indexOf(searchvalue,fromindex)
@@ -78,3 +76,27 @@ firstToLast("ababc","a") should return 2(2-0)
 firstToLast("ababc","c") should return 0(4-4)
 firstToLast("ababc","d") should return -1
 
+//SOLUTION:
+
+function firstToLast(str,c){
+  //coding here..
+  let a;
+  let b;
+  if (str.search(c) != -1){
+    console.log(str.indexOf(c));
+    console.log(str.lastIndexOf(c));
+    a = str.indexOf(c);
+    b = str.lastIndexOf(c);
+    result = b-a;
+  }
+  else {
+    result = -1;
+  }
+  return result;
+}
+
+//Test
+
+    Test.assertSimilar(firstToLast("ababc","a") , 2);
+    Test.assertSimilar(firstToLast("ababc","c") , 0);
+    Test.assertSimilar(firstToLast("ababc","d") , -1);
