@@ -77,6 +77,7 @@ firstToLast("ababc","c") should return 0(4-4)
 firstToLast("ababc","d") should return -1
 
 //SOLUTION:
+//The trick here was to use indexOf and lastIndexOf
 
 function firstToLast(str,c){
   //coding here..
