@@ -1,5 +1,3 @@
-/*THIS EXERCISE IS NOT COMPLETED YET*/
-
 /*This time we learn two methods to split or merge string:split() and concat(). also learn a good friend of the split() method: join(). It is an Array method. Their usage:*/
 
 stringObject.split(separator,howmany)
@@ -85,3 +83,24 @@ splitAndMerge("My name is John", " ")  ==  "M y n a m e i s J o h n"
 splitAndMerge("My name is John", "-")  ==  "M-y n-a-m-e i-s J-o-h-n"
 splitAndMerge("Hello World!", ".")     ==  "H.e.l.l.o W.o.r.l.d.!"
 splitAndMerge("Hello World!", ",")     ==  "H,e,l,l,o W,o,r,l,d,!"
+
+
+//Solution 
+
+ function splitAndMerge(string, separator) {
+   var words = string.split(" ");
+   for (let i=0; i<words.length; i++){
+     words[i] = words[i].split("");
+   }
+   for (let j=0; j<words.length; j++){
+     words[j] = words[j].join(separator);
+   }
+   return words.join(" ");
+   }
+
+
+    Test.assertSimilar(splitAndMerge("My name is John"," ") , "M y n a m e i s J o h n");
+    Test.assertSimilar(splitAndMerge("My name is John","-") , "M-y n-a-m-e i-s J-o-h-n");
+    Test.assertSimilar(splitAndMerge("Hello World!",".") , "H.e.l.l.o W.o.r.l.d.!");
+    Test.assertSimilar(splitAndMerge("Hello World!",",") , "H,e,l,l,o W,o,r,l,d,!");
+
