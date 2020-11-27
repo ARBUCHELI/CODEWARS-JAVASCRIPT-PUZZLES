@@ -100,6 +100,15 @@ A small hint: The first conversion of the entire string will make the code easie
 
 //Solution: (The Problem is still not solved)
 
+function alienLanguage(str){
+  //coding here...
+  let words = str.toUpperCase();
+  for(let i=0; i<words.length; i++){
+     words[i]=words[i].replace(words[i][words[i].length-1],words[i][words[i].length-1].toLowerCase());
+  }
+  console.log(words);
+  
+}
 
 
 
