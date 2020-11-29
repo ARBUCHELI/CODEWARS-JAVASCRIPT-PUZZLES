@@ -98,7 +98,24 @@ alienLanguage("this is an example") should return "THIs Is An EXAMPLe"
 alienLanguage("Hello World") should return "HELLo WORLd"
 A small hint: The first conversion of the entire string will make the code easier*/
 
+//Solution:
 
+function alienLanguage(str){
+  //coding here...
+  var words = str.split(" ")
+  for (var i=0; i<words.length; i++){
+    words[i]=words[i].toUpperCase();
+    words[i]=words[i].slice(0,words[i].length-1)+words[i][words[i].length-1].toLowerCase();
+      }  
+  return words.join(" "); 
+}
+
+//Test
+
+    Test.assertSimilar(alienLanguage("My name is John") , "My NAMe Is JOHn");
+    Test.assertSimilar(alienLanguage("this is an example") , "THIs Is An EXAMPLe");
+    Test.assertSimilar(alienLanguage("Hello World") , "HELLo WORLd");
+    Test.assertSimilar(alienLanguage("HELLO WORLD") , "HELLo WORLd");
 
 
 
