@@ -1,3 +1,5 @@
+//THIS CHALLENGE IS NOT SOLVED YET
+
 /*This time we learn three string methods used to single character operation :charAt() charCodeAt() and fromCharCode(). Their usage:*/
 
 stringObject.charAt(index)
@@ -142,6 +144,46 @@ Super agent ZIUScE, on a dark night, stole the Lolli pop from National Museum, c
 
 /*You only need to choose one of the text as the answer to the question. That is to say, any one of them is the correct answer.*/
 
+//Solution (NOT SOLVED YET)
+
+function topSecret(str){
+  //coding here...
+  var words = str.split(" ");
+  for (let i=0; i<words.length; i++){
+    words[i] = String.fromCharCode(words[i].charCodeAt()-3);
+  }
+  console.log(words);
+  
+}
+//question1: The top secret file number is...
+answer1="?";
+//question2: Super agent's name is...
+answer2="?";
+//question3: He stole the treasure is...
+answer3="?";
+
+//TAKE INTO CONSIDERATION WHAT YOU ARE DOING.  THE OUTPUT OF THIS INCOMPLETE SOLUTION IS NOT THE CORRECT OUTPUT AND UNTIL NOW WE HAVE:
+
+Test Results:
+Log
+[ 'M', 'n', 'i', 'J' ]
+Expected: '\'My name is John\'', instead got: 'undefined'
+Log
+[ 't', 'i', 'a', 'e' ]
+Expected: '\'this is an example\'', instead got: 'undefined'
+Log
+[ 'H', 'W' ]
+Expected: '\'Hello World!\'', instead got: 'undefined'
+
+//TEST
+
+//Fixed testcase only test the correctness
+//of the decryption code. 
+//The answer to the three question will appear 
+//only after clicking on "Submit".
+    Test.assertSimilar(topSecret("Pb qdph lv Mrkq") , "My name is John");
+    Test.assertSimilar(topSecret("wklv lv dq hadpsoh") , "this is an example");
+    Test.assertSimilar(topSecret("Khoor Zruog!") , "Hello World!");
 
 
 
