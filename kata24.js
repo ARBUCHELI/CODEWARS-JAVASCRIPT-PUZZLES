@@ -148,12 +148,17 @@ Super agent ZIUScE, on a dark night, stole the Lolli pop from National Museum, c
 
 function topSecret(str){
   //coding here...
-  var words = str.split(" ");
+  var words = str.split(""); 
   for (let i=0; i<words.length; i++){
-    words[i] = String.fromCharCode(words[i].charCodeAt()-3);
-  }
-  console.log(words);
-  
+        if(words[i] == " "){
+          words[i] = words[i];
+        }
+        //Pensar a partir de aquí para mayúsculas y minúsculas.
+        else {
+            words[i] = String.fromCharCode(words[i].charCodeAt()-3);
+        }
+    }
+  console.log(words); 
 }
 //question1: The top secret file number is...
 answer1="?";
@@ -161,7 +166,6 @@ answer1="?";
 answer2="?";
 //question3: He stole the treasure is...
 answer3="?";
-
 //TAKE INTO CONSIDERATION WHAT YOU ARE DOING.  THE OUTPUT OF THIS INCOMPLETE SOLUTION IS NOT THE CORRECT OUTPUT AND UNTIL NOW WE HAVE:
 
 Test Results:
