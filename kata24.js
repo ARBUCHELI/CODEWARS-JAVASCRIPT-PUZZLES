@@ -150,16 +150,20 @@ function topSecret(str){
   //coding here...
   var words = str.split(""); 
   for (let i=0; i<words.length; i++){
-        if(words[i] == " "){
-          words[i] = words[i];
-        }
-        //Pensar a partir de aquí para mayúsculas y minúsculas.
-        else {
-            words[i] = String.fromCharCode(words[i].charCodeAt()-3);
-        }
+        if (words[i].match(/[a-z]/i)){
+          let code = words[i].charCodeAt()-Math.ceil(3%26);
+          if (words[i].charCodeAt() >= 97 && code > 122) {
+                code = (code - 122 + 96);
+            }
+            if (words[i].charCodeAt() <= 90 && code > 90) {
+                code = (code - 90 + 64);
+            }
+          words[i] = String.fromCharCode(code);
+        } 
     }
   console.log(words); 
 }
+
 //question1: The top secret file number is...
 answer1="?";
 //question2: Super agent's name is...
