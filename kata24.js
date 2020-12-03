@@ -151,17 +151,17 @@ function topSecret(str){
   var words = str.split(""); 
   for (let i=0; i<words.length; i++){
         if (words[i].match(/[a-z]/i)){
-          let code = words[i].charCodeAt()-Math.ceil(3%26);
-          if (words[i].charCodeAt() >= 97 && code > 122) {
-                code = (code - 122 + 96);
-            }
-            if (words[i].charCodeAt() <= 90 && code > 90) {
-                code = (code - 90 + 64);
-            }
-          words[i] = String.fromCharCode(code);
+          var tmp = ((words[i].charCodeAt()));
+          var tmp1 = tmp-3;
+          /*console.log(tmp1);*/
+          if(tmp1 > 90 && tmp1 < 97){ /*To figure out this part was tricky because I
+          didn't use module*/
+            tmp1 = tmp1+26;
+          }
+          words[i] = String.fromCharCode(tmp1);
         } 
     }
-  console.log(words); 
+  return words.join("") ;
 }
 
 //question1: The top secret file number is...
