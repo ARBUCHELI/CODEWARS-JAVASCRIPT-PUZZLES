@@ -1,5 +1,3 @@
-//THIS CHALLENGE IS NOT SOLVED YET
-
 /*This time we learn three string methods used to single character operation :charAt() charCodeAt() and fromCharCode(). Their usage:*/
 
 stringObject.charAt(index)
@@ -144,7 +142,7 @@ Super agent ZIUScE, on a dark night, stole the Lolli pop from National Museum, c
 
 /*You only need to choose one of the text as the answer to the question. That is to say, any one of them is the correct answer.*/
 
-//Solution (NOT SOLVED YET)
+//Solution 
 
 function topSecret(str){
   //coding here...
@@ -164,12 +162,17 @@ function topSecret(str){
   return words.join("") ;
 }
 
+/*Test for: file=
+Wrs vhfuhw ilohv: Qr. 1891
+Vxshu djhqw wyHm, rq d gdun qljkw, vwroh wkh Wudlq wluh iurp Qdwlrqdo Pxvhxp, fdxvlqj $100 ploolrq lq gdpdjh. 
+Top secret files: No. 1891
+Super agent tvEj, on a dark night, stole the Train tire from National Museum, causing $100 million in damage.
 //question1: The top secret file number is...
-answer1="?";
+answer1="3443";
 //question2: Super agent's name is...
-answer2="?";
+answer2="Gxa";
 //question3: He stole the treasure is...
-answer3="?";
+answer3="Marie's husband";*/
 //TAKE INTO CONSIDERATION WHAT YOU ARE DOING.  THE OUTPUT OF THIS INCOMPLETE SOLUTION IS NOT THE CORRECT OUTPUT AND UNTIL NOW WE HAVE:
 
 Test Results:
