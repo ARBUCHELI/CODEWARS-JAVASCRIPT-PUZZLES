@@ -98,8 +98,17 @@ xyxyxyxyxy  <---The effect when you console.log it
 
 function fiveLine(s){
   //coding here...
-  var sfp = s.trim();
-  return `${s.trim()}
+  var ans = "";
+  var str = s.trim();
+  for (let i=1; i<=5; i++){
+    if(i!=5){
+        ans+= str.repeat(i)+"\n";
+    }
+    else if (i==5){
+      ans+= str.repeat(5);
+    }
+  }
+  return ans;
 }
 
 //Test
