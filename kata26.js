@@ -170,7 +170,7 @@ Each numeric array contains two numbers, which are indices for elements in arr (
 all your new skills: arrow functions, the spread operator, destructuring, and rest parameters.
 
 Example:
-/*
+*/
 
 shuffleIt([1,2,3,4,5],[1,2]) should return [1,3,2,4,5]
 shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
