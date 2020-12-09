@@ -180,7 +180,18 @@ shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 
 //Solution
 
-function shuffleIt(arr,?){
+function shuffleIt(arr,...num){
   //coding here...
+  //Num is a set of pairs of indexes
+  //The first step to solve this problem is to obtain each pair of indexes
+  var indexes=num=>{
+    for (let i=0; i<num.length; i++){
+      return num[i];
+      console.log(num[i]);
+    } 
+  }
+  console.log(indexes(num));
+}
+
   
 }
