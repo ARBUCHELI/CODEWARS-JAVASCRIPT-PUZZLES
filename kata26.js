@@ -184,11 +184,13 @@ function shuffleIt(arr,...num){
   //coding here...
   //Num is a set of pairs of indexes
   //The first step to solve this problem is to obtain each pair of indexes
-  var indexes=(...num)=>{
+  
+  
+  var swap=(arr, (...num)=>{
     for (let i=0; i<num.length; i++){
       return num[i];
     } 
-  }
-  console.log(indexes(num));
+  });
+  console.log(swap(num));
 }
 
