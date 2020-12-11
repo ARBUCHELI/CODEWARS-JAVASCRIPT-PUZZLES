@@ -179,18 +179,17 @@ shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
 shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 
 //Solution
+//Trying different approach
 
 function shuffleIt(arr,...num){
   //coding here...
   //Num is a set of pairs of indexes
   //The first step to solve this problem is to obtain each pair of indexes
-  
-  
-  var swap=(arr, (...num)=>{
-    for (let i=0; i<num.length; i++){
-      return num[i];
-    } 
-  });
-  console.log(swap(num));
+  var indexesarr = [];
+  for(let i=0; i<num.length; i++){
+    indexesarr.push(num[i]);
+    console.log(indexesarr[i]); 
+    console.log(arr[i]);
+    }
 }
 
