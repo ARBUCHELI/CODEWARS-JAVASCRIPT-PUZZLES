@@ -187,9 +187,9 @@ function shuffleIt(arr,...num){
   //The first step to solve this problem is to obtain each pair of indexes
   var indexesarr = [];
   for(let i=0; i<num.length; i++){
-    indexesarr.push(num[i]);
-    console.log(indexesarr[i]); 
-    console.log(arr[i]);
-    }
+    for(let j=0; j<num.length; j++){
+        indexarr.push(num[I];
+  }
 }
+
 
