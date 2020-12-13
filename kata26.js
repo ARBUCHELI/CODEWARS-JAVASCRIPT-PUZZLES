@@ -186,10 +186,29 @@ function shuffleIt(arr,...num){
   //Num is a set of pairs of indexes
   //The first step to solve this problem is to obtain each pair of indexes
   var indexesarr = [];
+  var indexes = [];
   for(let i=0; i<num.length; i++){
-    for(let j=0; j<num.length; j++){
-        indexarr.push(num[I];
+    indexesarr.push(num[i]);
   }
+  console.log(indexesarr);
+  for(let i=0; i<indexesarr.length; i++){
+    for(let j=0; j<2; j++){
+      var [a,b]=[arr[indexesarr[i][0]], arr[indexesarr[i][1]]];
+      [b,a] = [a,b];
+    }
+    arr[indexesarr[i][0]] = a;
+    arr[indexesarr[i][1]] = b;
+  }
+  console.log(a);
+  console.log(b);
+  console.log(arr);
+  return arr;
 }
+
+//Tests
+
+    Test.assertSimilar(shuffleIt([1,2,3,4,5],[1,2]) , [1,3,2,4,5]);
+    Test.assertSimilar(shuffleIt([1,2,3,4,5],[1,2],[3,4]) , [1,3,2,5,4]);
+    Test.assertSimilar(shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) , [1,3,5,2,4]);
 
 
