@@ -73,18 +73,23 @@ infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2) should return [[3,4],[5,6,7
 
 function infiniteLoop(arr,d,n){
   //coding here...
-  console.log(arr[arr.length-1]);
+  
+  
   if(d==="left"){
-    for(let i=0; i<arr.length-1; i++){
-        arr[i].shift();
-      if(arr[i]!=arr[arr.length-1]){
-        arr[i].push(arr[i+1][0]);
+    for(let i=0; i<n; i++){
+      var last = arr[0].shift();
+      arr[0].unshift(last);
+      for(let i=0; i<arr.length; i++){
+          arr[i].shift();
+          if(arr[i]!=arr[arr.length-1]){
+          arr[i].push(arr[i+1][0]);
+          }
+          else if(arr[i]==arr[arr.length-1]){
+            arr[i].push(last);
+          }
       }
-      if(arr[i]==arr[arr.length-1]){
-        arr[i].push(arr[0][0]);
-      }
-    }
-    console.log(arr);
+     }
+    return arr;
   }
 }
 
