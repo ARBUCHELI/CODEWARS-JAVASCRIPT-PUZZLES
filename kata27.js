@@ -69,7 +69,7 @@ infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1) should return [[2,3,4],[5,6,7]
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"right",1) should return [[9,1,2],[3,4,5],[6,7,8]]
 infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2) should return [[3,4],[5,6,7,8],[9,10,1,2]]
 
-//Solution left side and part of the right side (Very near to find the solution!!!
+//Solution completed !!
 
 function infiniteLoop(arr,d,n){
   //coding here...
@@ -94,26 +94,20 @@ function infiniteLoop(arr,d,n){
      for(let i=0; i<n; i++){
        var first = arr[arr.length-1].pop();
        arr[arr.length-1].push(first);
-       for(let i=0; i<arr.length; i++){
-         var shifty = 0;
-         if(arr[i]===arr[arr.length-1]){
-           shifty = 9;
+       for(let i=1; i<arr.length; i++){
+         let prim = arr[i-1].pop();
+         if(arr[i]!==arr[0]){
+           arr[i].unshift(prim);
          }
-         else {
-           shifty = arr[i].pop()
+         else if(arr[i]===arr[0]){
+            arr[i].unshift(first);
          }
-           console.log(shifty);
-           console.log(arr[i]);
-           if(arr[i]!=arr[0]){
-              arr[i].unshift(shifty);
-            }
-            else if(arr[i]===arr[0]){
-              arr[i].unshift(first);
-            }
        }
-       }
+      }
+      arr[arr.length-1].pop();
+      arr[0].unshift(first);
      }
-    return arr;
+  return arr;
   }
 
 //Test
