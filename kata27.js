@@ -69,7 +69,7 @@ infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1) should return [[2,3,4],[5,6,7]
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"right",1) should return [[9,1,2],[3,4,5],[6,7,8]]
 infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2) should return [[3,4],[5,6,7,8],[9,10,1,2]]
 
-//Temporary solution !!!
+//Solved !!!
 
 function infiniteLoop(arr,d,n){
   //coding here...
@@ -98,14 +98,17 @@ function infiniteLoop(arr,d,n){
          let prim = arr[i-1].pop();
          if(arr[i]!==arr[0]){
            arr[i].unshift(prim);
+           //arr[arr.length-1].pop();
+           //arr[0].unshift(first);
          }
-         else if(arr[i]===arr[0]){
-            arr[i].unshift(first);
+         if(arr[i] == arr[arr.length-1]){
+           arr[arr.length-1].pop();
+         }
+         else {
+           arr[0].unshift(first);
          }
        }
       }
-      arr[arr.length-1].pop();
-      arr[0].unshift(first);
      }
   return arr;
   }
