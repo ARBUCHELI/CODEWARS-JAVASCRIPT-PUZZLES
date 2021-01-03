@@ -179,7 +179,7 @@ shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
 shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 
 //Solution
-//Trying different approach
+//It's still necessary to review this solution because is not a complete solution yet.
 
 function shuffleIt(arr,...num){
   //coding here...
