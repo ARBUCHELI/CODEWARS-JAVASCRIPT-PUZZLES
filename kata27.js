@@ -1,4 +1,4 @@
-//Problem not solved yet
+//Problem not solved yet. The solution needs refactoring for all The cases. 
 
 /*From this Kata, I will do some changes: to reduce the description of the text (to provide a reference link). Because I am not good at writing these words of description.
 Examples and essential points will be retained.
