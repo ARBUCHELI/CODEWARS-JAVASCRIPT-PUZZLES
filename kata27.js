@@ -1,5 +1,3 @@
-//Problem not solved yet. The solution needs refactoring for all The cases. 
-
 /*From this Kata, I will do some changes: to reduce the description of the text (to provide a reference link). Because I am not good at writing these words of description.
 Examples and essential points will be retained.
 
@@ -69,7 +67,7 @@ infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1) should return [[2,3,4],[5,6,7]
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"right",1) should return [[9,1,2],[3,4,5],[6,7,8]]
 infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2) should return [[3,4],[5,6,7,8],[9,10,1,2]]
 
-//This solution is definitely still not complete
+//Solved for all the cases
 
 function infiniteLoop(arr,d,n){
   //coding here...
