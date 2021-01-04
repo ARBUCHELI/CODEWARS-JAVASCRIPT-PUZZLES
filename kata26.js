@@ -1,5 +1,3 @@
-//No solved yet 
-
 /*OK, my warriors! Now that you beat the big BOSS, you can unlock three new skills. (Does it sound like we're playing an RPG? ;-)
 
 The Arrow Function (JS only)
@@ -178,8 +176,7 @@ shuffleIt([1,2,3,4,5],[1,2]) should return [1,3,2,4,5]
 shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
 shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 
-//Solution
-//It's still necessary to review this solution because is not a complete solution yet.
+//Solved
 
 function shuffleIt(arr,...num){
   //coding here...
