@@ -1,3 +1,5 @@
+//Not solved yet
+
 /*We have learned four basic array methods, pop(), push(), shift() and unshift(), they are used to add or remove an array of elements. But their disadvantage is that they can only add or remove elements in order. This time we learn a new method: splice(). It can add and/or remove elements at any location in the array. Its
 usage:*/
 
@@ -118,3 +120,18 @@ threeInOne( [1,2,3]) should return [6]
 threeInOne( [1,2,3,4,5,6]) should return [6,15]
 threeInOne( [1,2,3,4,5,6,7,8,9]) should return [6,15,24]
 threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
+
+//First attempt of a solution, but not solved yet.
+
+function threeInOne(arr){
+  //coding here...
+  var new1 = arr.slice();
+  var result = 0;
+  for (var i=0; i<arr.length; i++) {
+    var sub = arr.splice(i,3);
+    for (var j=0; j<sub.length; j++){
+      var result = result + sub[j];
+      console.log(result);
+    }
+  }
+}
