@@ -2,13 +2,17 @@
 
 ## Coding Puzzles in Javascript from www.codewars.com
 
-## Kata 1:
+## Kata 1 - Multiply:
 Fix the code bug in the code.
 
-## Kata 2:
-Return the sum of all the multiples of 3 or 5 below the number passed in. If the number is a multiple of both 3 and 5, only count it once.
+## Kata 2 - Multiples of 3 or 5:
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-## Kata 3:
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+
+Note: If the number is a multiple of both 3 and 5, only count it once. Also, if a number is negative, return 0 (for languages that do have them).
+
+## Kata 3 - Primitives and operator precedence:
 Write a function greaterThanLessThan that takes three arguments, a, b, and c, and returns a boolean (true or false), such that:
 greaterThanLessThan(1, 2 3) === true
 and
@@ -16,7 +20,7 @@ greaterThanLessThan(3, 2 1) === true
 But also
 graterThanLessThan(-3, -2, -1) == false
 
-## Kata 4:
+## Kata 4 - Training JS # 1 - Create your first JS function and print:
 Task
 Please refer to two example above and write your first JS function.
 
