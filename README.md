@@ -39,3 +39,5 @@ type the console.log() in the next line(don't forget to put the str in the brack
 When you have finished the work, click "Run Tests" to see if your code is working properly.
 
 # Author: Andrés R. Bucheli.
+
+//NO OLVIDAR SINCRONIZAR Y ACTUALIZAR LAS SIGUIENTES KATAS.
