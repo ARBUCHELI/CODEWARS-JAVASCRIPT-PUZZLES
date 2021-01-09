@@ -1,6 +1,6 @@
 # CODEWARS-JAVASCRIPT-PUZZLES 
 
-## Coding Puzzles in Javascript from www.codewars.com
+## This repository contains solutions to some of the JavasCript Coding Puzzles found in www.codewars.com wich I decided to list as coding katas.
 
 ## Kata 1 - Multiply:
 Fix the code bug in the code.
@@ -40,4 +40,4 @@ When you have finished the work, click "Run Tests" to see if your code is workin
 
 # Author: Andrés R. Bucheli.
 
-//NO OLVIDAR SINCRONIZAR Y ACTUALIZAR LAS SIGUIENTES KATAS.
+
