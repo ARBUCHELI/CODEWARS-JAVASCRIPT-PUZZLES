@@ -126,12 +126,10 @@ threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
 function threeInOne(arr){
   //coding here...
   var new1 = arr.slice();
-  var result = 0;
-  for (var i=0; i<arr.length; i++) {
-    var sub = arr.splice(i,3);
-    for (var j=0; j<sub.length; j++){
-      var result = result + sub[j];
-      console.log(result);
-    }
+  var new2 = [];
+  var sum = 0;
+  for(var i=0; i<new1.length; i++){
+    new2 = new1.splice(i,3);
   }
+  console.log(new1);
 }
