@@ -123,15 +123,17 @@ threeInOne( [1,2,3,4,5,6]) should return [6,15]
 threeInOne( [1,2,3,4,5,6,7,8,9]) should return [6,15,24]
 threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
 
-//First attempt of a solution, but not solved yet.
+//First attempt of a solution, but not solved yet. Some progress.
 
 function threeInOne(arr){
   //coding here...
   var new1 = arr.slice();
   var new2 = [];
   var sum = 0;
-  for(var i=0; i<new1.length; i++){
-    new2 = new1.splice(i,3);
+  var i;
+  for (i=0; i<3; i++){
+    sum = sum+new1[i];
   }
-  console.log(new1);
+  new2.push(sum);
+  return new2;
 }
