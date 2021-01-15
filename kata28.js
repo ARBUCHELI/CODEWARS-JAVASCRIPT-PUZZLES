@@ -1,6 +1,7 @@
 //Not solved yet
 
-/*We have learned four basic array methods, pop(), push(), shift() and unshift(), they are used to add or remove an array of elements. But their disadvantage is that they can only add or remove elements in order. This time we learn a new method: splice(). It can add and/or remove elements at any location in the array. Its
+/*We have learned four basic array methods, pop(), push(), shift() and unshift(), they are used to add or remove an array of elements. But their disadvantage is that they 
+can only add or remove elements in order. This time we learn a new method: splice(). It can add and/or remove elements at any location in the array. Its
 usage:*/
 
 arrayObject.splice(startindex, deleteCount [,element1, element1, ...,elementx])
@@ -29,7 +30,8 @@ console.log(removeOdd([1,2,3,4,5]))   //output: [ 2, 4 ]
 console.log(removeOdd([1,3,5,7,9]))   //output: []
 
 /*The example above removes all the odd numbers from the array, leaving all the even numbers.
-Why don't I start to traverse the array from index0? because we need to pay special attention to that some of the methods of the array directly modify the original array. In some 
+Why don't I start to traverse the array from index0? because we need to pay special attention to that some of the methods of the array directly modify the original array.
+In some 
 cases, if you forget the fact, you will get the wrong result. In the example above, if we start to traverse the array from index0, some element will be missed:*/
 
 function removeOdd(arr){
