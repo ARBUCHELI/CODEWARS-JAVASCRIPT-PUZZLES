@@ -6,7 +6,8 @@ Each element in the array has an index, use arr[index] to get the value of eleme
 
 index always start from 0, so the first element of array is arr[0], the last element of array is arr[arr.length-1].
 
-If we want to add new elements to the array, you can use the array method: push(). It can add an element to the end of the array. Instead, if we want to remove the last element of the array, you can use the array method: pop(). for example:
+If we want to add new elements to the array, you can use the array method: push(). It can add an element to the end of the array. Instead, if we want to remove the last element
+of the array, you can use the array method: pop(). for example:
 
 var arr=[1,2,3];     //define an array arr contains elements 1 2 3
 arr.push(4);         //add element 4 to arr
