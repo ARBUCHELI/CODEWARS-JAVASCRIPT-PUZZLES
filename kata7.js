@@ -41,7 +41,7 @@ function getLast(arr){
 function pushElement(arr){
   var el=1;
   //push el to arr
-  arr.push(1);
+  arr.push(el);
   return arr;
 }
 function popElement(arr){
