@@ -20,6 +20,8 @@
 
 * Kata 9 - Training JS # 6 - Basic Data Types -- Boolean and Conditional Statements if...else
 
+* Kata 10 - Training JS # 7 - if ... else and ternar operator
+
 # Author: Andrés R. Bucheli.
 
 
