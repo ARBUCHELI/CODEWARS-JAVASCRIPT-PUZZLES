@@ -2,7 +2,8 @@
 
 if (condition) statementa
 else           statementb
-It means that if the condition is true, then execute the statementa, otherwise execute the statementb.If the statementa or statementb more than one line, you need to add { and } at the head and tail of statement in JS, to keep the same indentation on Python and to put a end in Ruby where it indeed ends.
+It means that if the condition is true, then execute the statementa, otherwise execute the statementb.If the statementa or statementb more than one line, you need to
+add { and } at the head and tail of statement in JS, to keep the same indentation on Python and to put a end in Ruby where it indeed ends.
 
 An example, if we want to judge whether a number is odd or even, we can write code like this:
 
@@ -22,7 +23,8 @@ This function returns a different value depending on the parameter age.
 Looks very complicated? Well, JS and Ruby also support the ternary operator and Python has something similar too:
 
 condition ? statementa : statementb
-Condition and statement separated by "?", different statement separated by ":" in both Ruby and JS; in Python you put the condition in the middle of two alternatives. The two examples above can be simplified with ternary operator:
+Condition and statement separated by "?", different statement separated by ":" in both Ruby and JS; in Python you put the condition in the middle of two alternatives.
+The two examples above can be simplified with ternary operator:
 
 function oddEven(n){
   return n%2==1 ? "odd number" : "even number";
@@ -31,7 +33,8 @@ function oldYoung(age){
   return age<16 ? "children" : age<50 ? "young man" : "old man";
 }
 Task:
-Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accept 1 parameters:n, n is the number of customers to buy hotdogs, different numbers have different prices (refer to the following table), return a number that the customer need to pay how much money.
+Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accept 1 parameters:n, n is the number of customers to buy hotdogs, different numbers have different prices
+(refer to the following table), return a number that the customer need to pay how much money.
 
 +---------------+-------------+
 |  numbers n    | price(cents)|
