@@ -51,6 +51,8 @@ When you have finished the work, click "Run Tests" to see if your code is workin
 
 In the end, click "Submit" to submit your code pass this kata.*/
 
+/* The solution was implemented in this way, because the platform didn't allow to use the ternary operator */
+
 function saleHotdogs(n){
   if (n<5) return n*100;
   else if (n>=5 && n<10) return n*95;
