@@ -22,6 +22,8 @@
 
 * Kata 10 - Training JS # 7 - if ... else and ternar operator
 
+* Kata 11 - Training JS # 8 - Conditional statement -- switch
+
 # Author: Andrés R. Bucheli.
 
 
