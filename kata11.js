@@ -15,7 +15,8 @@ switch(n){
     //code block
                  //The last one does not need break
 }
-switch is the keyword, n is the variable to switch, case 1 means when n===1, following the ":",you can add some executable statement, with keyword break as termination(if you forgot "break", code will running with case 2, case 3...until a "break" appear),default like else in the if..else statement.
+switch is the keyword, n is the variable to switch, case 1 means when n===1, following the ":",you can add some executable statement, with keyword break as termination(if 
+you forgot "break", code will running with case 2, case 3...until a "break" appear),default like else in the if..else statement.
 
 In some cases, use the switch statement to look more clearly than the if..else statement.
 
@@ -50,7 +51,8 @@ function whatDayIsToday(n){
   return x;
 }
 Task
-Complete function howManydays, function accept 1 parameters:month, means the month of year, different month has different days (refer to the following table), return a number that how many days in this month(month is always greater than 0, less than or equal to 12).
+Complete function howManydays, function accept 1 parameters:month, means the month of year, different month has different days (refer to the following table), return a 
+number that how many days in this month(month is always greater than 0, less than or equal to 12).
 
 +---------------+-------------+
 |    month      |    days     |
